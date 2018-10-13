@@ -1,0 +1,37 @@
+name: "KG_website"
+output_dir: "."
+navbar:
+  title: "myNotes"
+  type: default
+  left:
+    - text: "Home"
+      href: index.html
+      icon: fa-home
+    - text: "About"
+      href: about.html
+      icon: fa-info
+    - text: "STAT545"
+      href: hw3_KS.html
+      icon: fa-gear
+      menu:
+        - text: "Heading 1"
+        - text: "Page A"
+          href: a.html
+        - text: "Page B"
+          href: b.html
+        - text: "---------"
+        - text: "Heading 2"
+        - text: "Page C"
+          href: c.html
+        - text: "Page D"
+          href: d.html
+  right:
+    - icon: fa-question fa-lg
+      href: https://example.com
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
+    include:
+      after_body: footer.html
+    css: styles.css
